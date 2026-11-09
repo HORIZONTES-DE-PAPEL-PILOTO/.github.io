@@ -1,7 +1,7 @@
 /* Cabecera y pie compartidos: edítalos aquí y cambian en las 4 páginas. */
 (function(){
 var p=location.pathname.split('/').pop()||'index.html';
-var L=[['index.html','Inicio'],['quienes-somos.html','Quiénes somos'],['logros.html','Logros'],['eventos.html','Eventos']];
+var L=[['index.html','Inicio'],['quienes-somos.html','¿Quiénes somos?'],['logros.html','Logros'],['eventos.html','Eventos']];
 document.getElementById('h').innerHTML='<nav aria-label="Principal"><a class="brand" href="index.html"><img src="logo.png" alt="Logo de Horizontes de Papel">Horizontes de Papel</a>'+
 L.map(function(x){return '<a class="l'+(p===x[0]?' on':'')+'" href="'+x[0]+'">'+x[1]+'</a>'}).join('')+'<a class="d" href="index.html#donacion">Donar</a></nav>';
 document.getElementById('f').innerHTML='<div class="wrap"><div><strong style="font:800 1.2rem Outfit,sans-serif">Horizontes de Papel</strong><small>Lectura en centros juveniles</small></div><ul>'+
