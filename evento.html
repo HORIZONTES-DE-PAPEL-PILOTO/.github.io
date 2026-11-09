@@ -1,0 +1,14 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Evento · Horizontes de Papel</title><meta name="description" content="Horizontes de Papel promueve la lectura en centros juveniles del Perú."><link rel="icon" href="logo.png"><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;700;800&family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"></head><body><header id="h"></header><main>
+<div class="ptitle"><div class="wrap"><h1 id="et">Evento</h1><p id="ed"></p></div></div>
+<section><div class="wrap"><div class="gal" id="gal"></div><p class="note" id="vacio" hidden>Pronto subiremos las fotos de este evento.</p>
+<div class="btns"><a class="btn c" href="eventos.html">← Todos los eventos</a></div><h3 style="margin-top:40px">Otros eventos</h3><div class="vals" id="otros"></div></div></section>
+<script>
+(function(){var E={'gincana':['Gincana','Una jornada de juegos y trabajo en equipo.'],'navidad':['Navidad','Una celebración navideña dentro del centro juvenil.'],'congresos':['Congresos','Espacios donde presentamos nuestro trabajo y conocemos a otras organizaciones.'],'dia-de-la-madre':['Día de la Madre','Un homenaje a las madres jóvenes y a sus bebés.'],'28-de-julio':['28 de julio','Una actividad por Fiestas Patrias.'],'presentaciones':['Presentaciones de las adolescentes','Teatro, música y otras expresiones artísticas preparadas por ellas.']};var k=location.hash.slice(1);if(!E[k])k='gincana';
+document.title=E[k][0]+' · Horizontes de Papel';document.getElementById('et').textContent=E[k][0];document.getElementById('ed').textContent=E[k][1];
+var g=document.getElementById('gal');
+for(var i=1;i<=12;i++){var a=document.createElement('a'),m=new Image();m.src='img/eventos/'+k+'-'+i+'.jpg';m.alt=E[k][0]+', foto '+i;m.loading='lazy';m.onerror=function(){this.parentNode.remove()};a.href=m.src;a.target='_blank';a.rel='noopener';a.appendChild(m);g.appendChild(a)}
+window.addEventListener('load',function(){setTimeout(function(){if(!g.children.length)document.getElementById('vacio').hidden=false},400)});
+var o=document.getElementById('otros');for(var x in E){if(x!==k){var l=document.createElement('a');l.href='evento.html#'+x;l.textContent=E[x][0];l.style.cssText='background:var(--sun);padding:7px 18px;border-radius:999px;font:700 .98rem Outfit,sans-serif;text-decoration:none';o.appendChild(l)}}
+window.addEventListener('hashchange',function(){location.reload()});})();
+</script>
+</main><footer id="f"></footer><script src="site.js"></script></body></html>
