@@ -88,3 +88,5 @@ footer small{display:block;margin-top:8px;color:#C9B8C7}
 .cover img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .more{display:inline-block;margin-top:12px;font:700 .95rem Outfit,sans-serif;color:var(--coral)}
 @media(max-width:760px){.feature{grid-template-columns:1fr}}
+
+.gh{margin:36px 0 0;color:var(--coral);font-size:1.3rem}
