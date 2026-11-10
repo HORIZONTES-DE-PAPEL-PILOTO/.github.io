@@ -1,18 +1,4 @@
-Sube aqui las fotos de cada evento con este formato (hasta 12 por evento):
-gincana-1.jpg, gincana-2.jpg ...
-navidad-1.jpg ...
-congresos-1.jpg ...
-dia-de-la-madre-1.jpg ...
-28-de-julio-1.jpg ...
-presentaciones-1.jpg ...
-La primera foto (-1) se usa como portada. Usa solo fotos donde las adolescentes esten pixeladas o no se vean sus rostros.
-
-
--GINCANA
--NAVIDAD
--CONGRESOS
--DIA DE LA MADRE
--28 DE JULIO
--PRESENTACIONES DE LA ADOLESCENTES
--FOTO SENAJU Y ENLACES DE VIDEO DE 
--FOTOS RPP Y ENLACES DE VIDEO DE RADIO RPP
+Fotos de apariciones en medios, hasta 20 por medio:
+rpp-1.jpg, rpp-2.jpg ...  (Radio RPP)
+pbo-1.jpg, pbo-2.jpg ...  (Canal PBO)
+Para un medio nuevo, agrega una linea en la lista M dentro de apariciones.html y sube sus fotos con ese mismo id.
