@@ -1,0 +1,18 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Apariciones en medios · Horizontes de Papel</title><meta name="description" content="Horizontes de Papel promueve la lectura en centros juveniles del Perú."><link rel="icon" href="logo.png"><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;700;800&family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"></head><body><header id="h"></header><main>
+<div class="ptitle"><div class="wrap"><h1>Apariciones en medios</h1><p>Radio, televisión e internet: nuestro paso por los medios.</p></div></div>
+<section><div class="wrap" id="medios"></div></section>
+<script>
+/* Para agregar un medio nuevo: añade una línea aquí y sube sus fotos a img/apariciones/ como id-1.jpg, id-2.jpg ... (tipo: Radio, Televisión o Internet) */
+(function(){var M=[{id:'rpp',tipo:'Radio',nombre:'RPP'},{id:'pbo',tipo:'Televisión',nombre:'Canal PBO'}];
+var root=document.getElementById('medios'),T=['Radio','Televisión','Internet'];
+T.forEach(function(t){var L=M.filter(function(m){return m.tipo===t});if(!L.length)return;
+var h=document.createElement('h2');h.textContent=t;h.style.marginTop='24px';root.appendChild(h);
+L.forEach(function(m){var h3=document.createElement('h3');h3.textContent=m.nombre;h3.className='gh';root.appendChild(h3);
+var g=document.createElement('div');g.className='gal';root.appendChild(g);
+var p=document.createElement('p');p.className='note';p.hidden=true;p.textContent='Pronto subiremos las fotos de esta aparición.';root.appendChild(p);
+for(var i=1;i<=20;i++){var a=document.createElement('a'),im=new Image();im.src='img/apariciones/'+m.id+'-'+i+'.jpg';im.alt=m.nombre+', foto '+i;im.loading='lazy';im.onerror=function(){this.parentNode.remove()};a.href=im.src;a.target='_blank';a.rel='noopener';a.appendChild(im);g.appendChild(a)}
+window.addEventListener('load',function(){setTimeout(function(){if(!g.children.length)p.hidden=false},400)})})});
+})();
+</script>
+<section class="bg"><div class="wrap"><a class="btn c" href="logros.html">← Volver a Logros</a></div></section>
+</main><footer id="f"></footer><script src="site.js"></script></body></html>
