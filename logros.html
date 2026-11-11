@@ -8,6 +8,12 @@
 <div class="card"><h3>Periódicos</h3><p class="soon">Aquí irán las notas de prensa sobre Horizontes de Papel.</p></div></div></div></section>
 <section class="bg"><div class="wrap"><h2>Logros de las sesiones</h2><p>Los textos, dibujos y trabajos que crean las adolescentes en cada sesión.</p>
 <!-- Sube solo imágenes de trabajos (escritos, dibujos, manualidades). No publiques rostros de adolescentes sin autorización. -->
-<div class="gallery"><div class="ph">Producto 1</div><div class="ph">Producto 2</div><div class="ph">Producto 3</div><div class="ph">Producto 4</div></div>
+<div class="gal" id="sg"></div><p class="note" id="sv" hidden>Pronto subiremos los trabajos de las adolescentes.</p>
 <p class="note">Por protección de las adolescentes, solo mostramos sus trabajos y no sus rostros.</p></div></section>
+<script>
+/* Fotos de los trabajos: sube img/sesiones/producto-1.jpg, producto-2.jpg ... (hasta 24) */
+(function(){var g=document.getElementById('sg');
+for(var i=1;i<=24;i++){var a=document.createElement('a'),m=new Image();m.src='img/sesiones/producto-'+i+'.jpg';m.alt='Trabajo de las sesiones '+i;m.loading='lazy';m.onerror=function(){this.parentNode.remove()};a.href=m.src;a.target='_blank';a.rel='noopener';a.appendChild(m);g.appendChild(a)}
+window.addEventListener('load',function(){setTimeout(function(){if(!g.children.length)document.getElementById('sv').hidden=false},400)});})();
+</script>
 </main><footer id="f"></footer><script src="site.js"></script></body></html>
